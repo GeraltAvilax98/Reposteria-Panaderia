@@ -11,11 +11,6 @@ function generarMenu($usercod)
         $menu[] = array("mdlprg"=>"dashboard","mdldsc"=>"Inicio");
     }
 
-    if (isAuthorized('favorito', $usercod)) 
-    {
-        $menu[] = array("mdlprg"=>"favorito","mdldsc"=>"favorito");
-    }
-
     //Agregar Nuevos o Partes del Menu (Recuerde no Sobre Cargaer)
     // Perfil Administrativo
     if (isAuthorized('security', $usercod)) 
